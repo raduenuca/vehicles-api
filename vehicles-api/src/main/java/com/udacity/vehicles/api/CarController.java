@@ -87,7 +87,7 @@ class CarController {
         car.setId(id);
         carService.save(car);
 
-        var resource = assembler.toModel(new Car());
+        var resource = assembler.toModel(car);
         return ResponseEntity.ok(resource);
     }
 
